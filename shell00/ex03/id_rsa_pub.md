@@ -12,22 +12,25 @@ Abra o terminal e execute:
 
 ```bash
 ls ~/.ssh
+```
 
 ## 2. Se não houver, crie uma nova.
 
 ```bash
 ssh-keygen -t rsa -b 4096
+```
 
 
 #### obs: 
-#####id_rsa → chave privada
-####id_rsa.pub → chave pública
+id_rsa → chave privada
+id_rsa.pub → chave pública
 
 ## 3. Criar o arquivo exigido pela 42 no exercício
 ### Mostre o conteúdo da chave pública:
 
 ```bash
 cat ~/.ssh/id_rsa.pub
+```
 
 ## 4. Criar o arquivo id_rsa_pub
 
@@ -45,8 +48,10 @@ cat ~/.ssh/id_rsa.pub
 
 ```bash
 ssh -T git@vogsphere.42sp.org.br
+```
 
 #### Se aparecer algo como:
 
 ```bash
 Welcome to Git, <seu_login>!
+```
